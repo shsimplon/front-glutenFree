@@ -1,0 +1,51 @@
+.professionnel-componnent{
+
+    margin-left: 20%;
+ h1{
+   line-height: 3rem;
+   font-weight: 100;
+   
+    animation-duration: 25s;
+    animation-name: slidein;
+
+  
+  @keyframes slidein {
+   
+    75% {
+      font-size: 300%;
+      width: 100%;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+ }
+  
+}
+
+
+  
+.professionnel-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  height: 800px;
+}
+
+
+.add-etablissement{
+   img{
+       margin: auto;
+       display: flex;
+       margin-top: 5%;
+   }
+   img{
+       width: 100%;
+   }
+   h2{
+       color: $color-5;
+       margin-left: 15%;
+   }
+  
+}

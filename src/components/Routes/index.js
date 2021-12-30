@@ -22,6 +22,7 @@ import { hasAuthenticated } from "../../services/AuthApi";
 import Auth from "../../context/Auth";
 import AuthenticatedRoute from "../AuthenticatedRoute";
 import RajouterRecette from "../RajouterRecette";
+import Professionnel from "../../pages/Professionnel";
 
 const index = () => {
   // eslint-disable-next-line no-unused-vars
@@ -38,6 +39,7 @@ const index = () => {
           <Route path="/patisseries" exact component={Patisserie} />
           <Route path="/recette" exact component={Recette} />
           <Route path="/rajouter-recette" exact component={Recette} />
+          <Route path="/professionel" exact component={Professionnel} />
           <Route path="/profil" exact component={Profil} />
 
           <AuthenticatedRoute path="/account" component={RajouterRecette} />

@@ -52,6 +52,7 @@
             transition: 0.3s;
              transform: scaleY(0.3);
             z-index: 20;
+            padding: 2%;
 
       
             &:after {
@@ -105,4 +106,9 @@
     }
     
     
+      }
+
+      .DetailsEtablissement .data-container{
+          width: 400px;
+         
       }

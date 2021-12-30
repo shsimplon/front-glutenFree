@@ -3,8 +3,10 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import Auth from "../context/Auth";
+import Professionnel from "../pages/Professionnel";
 // import { UidContext } from './AppContext';
 import Logout from "./Log/Logout";
+import Professionnels from "./Professionnels";
 
 const Navbar = () => {
   const { isAuthenticated } = useContext(Auth);
@@ -20,6 +22,50 @@ const Navbar = () => {
             </div>
           </NavLink>
         </div>
+        {isAuthenticated ? (
+          <div className="professionel-navBar">
+            <NavLink
+              to="/professionel"
+              style={{
+                font: "bold",
+                fontSize: "1.5rem",
+                marginBottom: "2rem",
+              }}
+            >
+              <img
+                src="./img/icons/chef.png"
+                alt="profil"
+                style={{
+                  width: 45,
+                  height: 45,
+                }}
+              />
+              <span>Professionnels</span>
+            </NavLink>
+          </div>
+        ) : (
+          <div className="professionel-navBar">
+            <NavLink
+              to="/profil"
+              style={{
+                font: "bold",
+                fontSize: "1.5rem",
+                marginBottom: "2rem",
+              }}
+            >
+              <img
+                src="./img/icons/chef.png"
+                alt="profil"
+                style={{
+                  width: 45,
+                  height: 45,
+                }}
+              />
+              <span>Professionnels</span>
+            </NavLink>
+          </div>
+        )}
+
         {isAuthenticated ? (
           <ul>
             <li></li>
